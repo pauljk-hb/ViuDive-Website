@@ -1,0 +1,40 @@
+@import url(src/style/reset.css);
+@import url(src/style/font.css);
+
+/* ---------- Theme Settings ---------- */
+
+:root {
+    /* Color */
+    --darkBlue: #081226;
+    --deepBlue: #011C40;
+    --ligthBlue: #80B9BF;
+    --whiteBlue: #DCECEE;
+    --ligthWhiteBlue: #EAEFF2;
+
+    /* Font */
+    --extraLight: 'Alexandria-extraLight';
+    --normal: 'Alexandria-normal';
+    --semiBold: 'Alexandria-semiBold';
+    --bold: 'Alexandria-bold';
+
+    --title: 10em;
+    --subTitle: 5.83em;
+    --imgTitle: 3.17em;
+    --bigText: 2.92em;
+    --smallText: 1.25em;
+    --sectionTitle: 2.25em;
+    --sectionSubTitle: 1.67em;
+
+}
+
+@media (max-width: 50em){
+    :root{
+        --title: 10em;
+        --subTitle: 5.83em;
+        --imgTitle: 3.17em;
+        --bigText: 2.92em;
+        --smallText: 1.25em;
+        --sectionTitle: 2.25em;
+        --sectionSubTitle: 1.67em;
+    }
+}
