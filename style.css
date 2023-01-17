@@ -38,9 +38,3 @@
         --sectionSubTitle: 1.67em;
     }
 }
-
-h1{
-    color: var(--deepBlue);
-    font-size: var(--sectionSubTitle);
-    font-family: var(--bold);
-}
