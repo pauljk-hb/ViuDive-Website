@@ -8,19 +8,20 @@
     <title>ViuDive</title>
   </head>
   <body>
+
     <nav>
-      <div>
-        <img src="src/img/Logo.webp" alt="Logo" />
-        <ol>
-          <ul>
-            <a href="#">Privat</a>
-          </ul>
-          <ul>
-            <a href="#">Buisness</a>
-          </ul>
-          <ul>
-            <a href="#">Kampanie</a>
-          </ul>
+      <div class="nav sectionWidth">
+        <a href="#"><img src="src/img/Logo.webp" id="logo" alt="Logo" /></a>
+        <ol class="flex nav-item-list">
+          <li>
+            <a class="nav-item" href="#">Privat</a>
+          </li>
+          <li>
+            <a class="nav-item" href="#">Buisness</a>
+          </li>
+          <li>
+            <a class="nav-item" href="#">Kampanie</a>
+          </li>
         </ol>
       </div>
     </nav>
@@ -28,9 +29,12 @@
     <header class="header">
       <div class="hero">
         <div class="hero-content">
-        <h1 class="siteTitle">Du bestimmst <br> wohin es geht</h1>
-        <h2 class="subTitle">#EarthInOnePlace</h2>
-      </div>
+          <h1 class="siteTitle">
+            Du bestimmst <br />
+            wohin es geht
+          </h1>
+          <h2 class="subTitle">#EarthInOnePlace</h2>
+        </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="49.223"
@@ -49,7 +53,7 @@
             stroke-width="4"
           />
         </svg>
-      
+
         <video class="video-bg" autoplay muted loop>
           <source src="src/videos/Header_Home.webm" type="video/webm" />
         </video>
@@ -77,45 +81,58 @@
         </div>
       </section>
 
-      <section>
-        <h3>Wie funktioniert ViuDive</h3>
-        <div>
-          <img src="src/img/Silhouette phone antenna.webp" alt="" />
-          <div>
-            <h3>Daten sammeln</h3>
-            <p>
-              Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch
-              Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.
-              Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich.
-              Vogel Quax.
-            </p>
-          </div>
-        </div>
-        <div>
-          <img src="src/img/Empty hallway of server towers.webp" alt="" />
-          <div>
-            <h3>Daten verarbeiten</h3>
-            <p>
-              Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch
-              Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.
-              Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich.
-              Vogel Quax.
-            </p>
-          </div>
-        </div>
-        <div>
-          <img
-            src="src/img/Female doctor putting electrodes on patients head.webp"
-            alt=""
-          />
-          <div>
-            <h3>immersive Reise</h3>
-            <p>
-              Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch
-              Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.
-              Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich.
-              Vogel Quax.
-            </p>
+      <section class="lightBlueBk BeschreibungVIUDIVE">
+        <div class="sectionWidth">
+          <h3 class="sectionTitle margin-bottom">Wie funktioniert ViuDive</h3>
+
+          <div class="flex">
+            <div class="box">
+              <div class="img-box">
+                <img src="src/img/Silhouette phone antenna.webp" alt="" />
+              </div>
+              <div class="flex gap-small small-padding">
+                <h3 class="sectionSubTitle">Daten sammeln</h3>
+                <p class="smallParagraph">
+                  Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch
+                  Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch
+                  Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen
+                  Sylter Deich. Vogel Quax.
+                </p>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="img-box">
+                <img src="src/img/Empty hallway of server towers.webp" alt="" />
+              </div>
+              <div class="flex gap-small small-padding">
+                <h3 class="sectionSubTitle">Daten verarbeiten</h3>
+                <p class="smallParagraph">
+                  Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch
+                  Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch
+                  Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen
+                  Sylter Deich. Vogel Quax.
+                </p>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="img-box">
+                <img
+                  src="src/img/Female doctor putting electrodes on patients head.webp"
+                  alt=""
+                />
+              </div>
+              <div class="flex gap-small small-padding">
+                <h3 class="sectionSubTitle">immersive Reise</h3>
+                <p class="smallParagraph">
+                  Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch
+                  Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch
+                  Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen
+                  Sylter Deich. Vogel Quax.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -131,4 +148,6 @@
       <footer></footer>
     </main>
   </body>
+
+  <script src="main.js"></script>
 </html>
