@@ -4,37 +4,141 @@
 /* ---------- Theme Settings ---------- */
 
 :root {
-    /* Color */
-    --darkBlue: #081226;
-    --deepBlue: #011C40;
-    --ligthBlue: #80B9BF;
-    --whiteBlue: #DCECEE;
-    --ligthWhiteBlue: #EAEFF2;
+  /* Color */
+  --darkBlue: #081226;
+  --deepBlue: #011c40;
+  --ligthBlue: #80b9bf;
+  --whiteBlue: #dcecee;
+  --ligthWhiteBlue: #eaeff2;
 
-    /* Font */
-    --extraLight: 'Alexandria-extraLight';
-    --normal: 'Alexandria-normal';
-    --semiBold: 'Alexandria-semiBold';
-    --bold: 'Alexandria-bold';
+  /* Font */
+  --extraLight: "Alexandria-extraLight";
+  --normal: "Alexandria-normal";
+  --semiBold: "Alexandria-semiBold";
+  --bold: "Alexandria-bold";
 
+  --title: 7em;
+  --subTitle: 3em;
+  --imgTitle: 3.17em;
+  --bigText: 1.6em;
+  --smallText: 1em;
+  --sectionTitle: 2.25em;
+  --sectionSubTitle: 1.67em;
+}
+
+@media (max-width: 50em) {
+  :root {
     --title: 10em;
     --subTitle: 5.83em;
     --imgTitle: 3.17em;
     --bigText: 2.92em;
-    --smallText: 1.25em;
+    --smallText: 15px;
     --sectionTitle: 2.25em;
     --sectionSubTitle: 1.67em;
-
+  }
 }
 
-@media (max-width: 50em){
-    :root{
-        --title: 10em;
-        --subTitle: 5.83em;
-        --imgTitle: 3.17em;
-        --bigText: 2.92em;
-        --smallText: 1.25em;
-        --sectionTitle: 2.25em;
-        --sectionSubTitle: 1.67em;
-    }
+.sectionWidth{
+    max-width: 1450px;
+    margin: auto;
+    padding: 0 3em;
 }
+
+.flex{
+    display: flex;
+    gap: 3em;
+}
+
+.img-sec-text{
+    padding-top: 18em;
+}
+
+.gap{
+    gap: 15em!important;
+}
+
+.margin-bottom{
+    margin-bottom: 4em;
+}
+
+.siteTitle{
+    color: white;
+    font-family: var(--bold);
+    font-size: var(--title);
+    line-height: normal;
+}
+
+.subTitle{
+    color: var(--ligthBlue);
+    font-family: var(--extraLight);
+    font-size: var(--subTitle);
+}
+
+.welcomeTitle{
+    font-family: var(--normal);
+    font-size: var(--smallText);
+    white-space:nowrap;
+}
+
+.bigParagraph{
+    font-family: var(--extraLight);
+    font-size: var(--bigText);
+}
+
+.img-title{
+    font-family: var(--bold);
+    font-size: var(--imgTitle);
+    line-height: normal;
+    color: white;
+}
+
+.content{
+    background-color: white;
+    margin-top: 80vh;
+    border-radius: 3em 3em 0 0;
+    padding-top: 7em;
+}
+
+
+/* ---------- Home Site Settings ---------- */
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  gap: 15em;
+}
+
+.hero svg{
+    margin-bottom: 5em;
+}
+
+.video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.imgSlideSmall{
+    min-height: 35rem;
+    background-image: url(src/img/Top\ view\ of\ Hong\ Kong\ city\ at\ night.webp);
+    background-size: cover;
+}
+
+
