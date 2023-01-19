@@ -158,6 +158,10 @@ button{
     background-color: var(--ligthWhiteBlue);
 }
 
+.white{
+    color: white;
+}
+
 /* Nav Bar */
 
 nav{
@@ -287,8 +291,40 @@ li > a::after {
     text-align: center;
 }
 
-/* ---------- Kampagne Site Settings ---------- */
+/* ---------- Buissnes Site Settings ---------- */
 
+.imgSlide{
+    min-height: 50em;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slide-wraper{
+    max-width: 15em;
+    justify-self: left;
+}
+
+.img-text-width{
+    max-width: 40em;
+    margin-left: clamp(1em, 15em, 20em);
+    margin-top: 25em;
+}
+
+#arch{
+    background-image: url(/src/img/Team\ of\ archaeologists\ excavating\ fossils.webp);
+}
+
+
+#medi{
+    background-image: url(/src/img/doctors\ using\ tablet\ in\ surgery\ room.webp);
+}
+
+#stadion{
+    background-image: url(/src/img/football\ or\ soccer\ \ goal\ celebration.webp);
+}
 
 
 /* ---------- Kampagne Site Settings ---------- */
