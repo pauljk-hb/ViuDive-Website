@@ -83,6 +83,16 @@
 }
 
 
+button{
+    background-color: transparent;
+    border-radius: 2em;
+    border-color: white;
+    padding: 0 1em;
+    color: white;
+    font-family: var(--normal);
+}
+
+
 /* position */
 
 @media (min-width: 70em) {
