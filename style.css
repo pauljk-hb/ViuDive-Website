@@ -48,6 +48,7 @@
     font-family: var(--normal);
     font-size: var(--smallText);
     white-space:nowrap;
+    color: var(--darkBlue);
 }
 
 .bigParagraph{
@@ -85,7 +86,7 @@
 
 button{
     background-color: transparent;
-    border-radius: 2em;
+    border-radius: 1em;
     border-color: white;
     padding: 0 1em;
     color: white;
@@ -100,6 +101,13 @@ button{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 0em 1em;
+        grid-auto-flow: row;
+    }
+
+    .res-grid-2-1 {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        gap: 0em 3em;
         grid-auto-flow: row;
     }
       
@@ -173,10 +181,34 @@ nav{
     color: white;
 }
 
-#logo{
+.logo{
     width: 5rem;
     height: auto;
 }
+
+li > a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 1.4px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: all 0.3s;
+    
+  }
+  
+  li > a:hover::after, li > a.active-nav::after {
+    width: 100%;
+    background: var(--ligthBlue);
+  }
+
+  /* Footer  */
+
+  footer{
+    min-height: 20em;
+    background-color: var(--deepBlue);
+  }
 
 /* ---------- Home Site Settings ---------- */
 
@@ -253,5 +285,41 @@ nav{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+/* ---------- Kampagne Site Settings ---------- */
+
+
+
+/* ---------- Kampagne Site Settings ---------- */
+
+#ViuDiveMockUp{
+    max-width: 60em;
+    border-radius:7em 7em 0 0;
+    margin-left: 3em;
+}
+
+.download{
+    padding-top: 10em;
+}
+
+.download div, .download h3{
+    margin-bottom: 1em;
+}
+
+.download div{
+    margin-left: 3em;
+}
+
+#bk-hero-image{
+    background-image: url(/src/img/safari\ wildlife\ animal\ in\ the\ nature\ of\ field\ freedom\ living\ at\ sunset\ scenery.png);
+    background-size: cover;
+    background-color: #011c40;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+.overlay-blue{
+    background-color: var(--darkBlue);
 }
 
