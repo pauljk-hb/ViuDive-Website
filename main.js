@@ -2,7 +2,7 @@ const nav = document.getElementsByClassName('nav')[0];
 const navbk = document.getElementsByTagName('nav')[0];
 const navItem = document.getElementsByClassName('nav-item');
 
-window.addEventListener('scroll', () =>{
+window.addEventListener('scroll', () => {
     let offset = window.scrollY;
     console.log(offset);
     if (offset > 700) {
@@ -10,40 +10,34 @@ window.addEventListener('scroll', () =>{
         navbk.style.backgroundColor = 'white';
         for (let i = 0; i < navItem.length; i++) {
             navItem[i].style.color = 'var(--darkBlue)';
-            navItem[i].style.fontFamily  = 'var(--normal)';
+            navItem[i].style.fontFamily = 'var(--normal)';
         }
-        
-    }else{
+
+    } else {
         nav.style.height = '5rem';
         navbk.style.backgroundColor = 'transparent';
         for (let i = 0; i < navItem.length; i++) {
             navItem[i].style.color = 'white';
-            navItem[i].style.fontFamily  = 'var(--extraLight)';
+            navItem[i].style.fontFamily = 'var(--extraLight)';
         }
-        
+
     }
 
 })
 
 // scrolling Effekt
-window.addEventListener('scroll', ()=>{
-    const img = document.getElementsByClassName('imgSlide');
-    let offset = window.scrollY;
 
-    for (let i = 0; i < img.length; i++) {
-        let style = getComputedStyle(img[i]);
-        let imgPosition = style.backgroundPositionY;
-        imgPosition = imgPosition.slice(0, -2);  
-        imgPosition = Math.abs(imgPosition);
+    window.addEventListener('scroll', () => {
+        const img = document.getElementsByClassName('imgSlide');
+        let offset = window.scrollY;
 
-        console.log(imgPosition)
-        
-        let Position = ((offset) * 0.3) - 600;
-        
-        img[i].style.backgroundPositionY = Position + 'px';
-        
-    }
-    // for (let i = 0; i < img.length; i++) {
-    //     img[i].style.backgroundPositionY = offset * 0.7 +"px";
-    // }
-})
+        if(img.length > 1){
+            img[0].style.backgroundPositionY = ((offset) * 0.3) - 400 + 'px';
+            img[1].style.backgroundPositionY = ((offset) * 0.3) - 600 + 'px';
+            img[2].style.backgroundPositionY = ((offset) * 0.3) - 850 + 'px';
+        }else{
+            img[0].style.backgroundPositionY = ((offset) * 0.3) - 600 + 'px';
+
+        }
+    
+    })
