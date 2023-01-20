@@ -256,7 +256,7 @@ li > a::after {
   text-align: center;
   position: relative;
   overflow: hidden;
-  gap: 15em;
+  gap: 25vh;
 }
 
 .hero svg{
