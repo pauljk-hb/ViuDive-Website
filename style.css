@@ -83,16 +83,27 @@
     white-space: nowrap;
 }
 
-
 button{
-    background-color: transparent;
-    border-radius: 1em;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 15px;
     border-color: white;
-    padding: 0 1em;
     color: white;
     font-family: var(--normal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
 }
 
+button:hover{
+    color: var(--ligthBlue);
+    transition: all 0.4s;
+}
+
+button:hover .svg{
+    stroke: var(--ligthBlue);
+    transition: all 0.4s;
+}
 
 /* position */
 
@@ -292,6 +303,15 @@ li > a::after {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.call-to-action p{
+    margin-bottom: 2em;
+}
+
+.call-to-action a{
+    display: flex;
+    justify-content: center;
 }
 
 /* ---------- Buissnes Site Settings ---------- */
