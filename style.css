@@ -250,9 +250,12 @@ li > a::after {
 }
 
 .imgSlideSmall{
-    min-height: 35rem;
-    background-image: url(src/img/Top\ view\ of\ Hong\ Kong\ city\ at\ night.webp);
-    background-size: cover;
+    min-height: 35rem!important;
+    display: block!important;
+}
+
+#city{
+    background-image: url(/src/img/Top\ view\ of\ Hong\ Kong\ city\ at\ night.webp);
 }
 
 .BeschreibungVIUDIVE{

@@ -25,11 +25,24 @@ window.addEventListener('scroll', () =>{
 
 })
 
+// scrolling Effekt
 window.addEventListener('scroll', ()=>{
-    const img = document.getElementsByClassName('imgSlideSmall')[0];
+    const img = document.getElementsByClassName('imgSlide');
     let offset = window.scrollY;
-    console.log(offset);
-    img.style.backgroundPositionY = (offset* 0.3) -600 + 'px';
+
+    for (let i = 0; i < img.length; i++) {
+        let style = getComputedStyle(img[i]);
+        let imgPosition = style.backgroundPositionY;
+        imgPosition = imgPosition.slice(0, -2);  
+        imgPosition = Math.abs(imgPosition);
+
+        console.log(imgPosition)
+        
+        let Position = ((offset) * 0.3) - 600;
+        
+        img[i].style.backgroundPositionY = Position + 'px';
+        
+    }
     // for (let i = 0; i < img.length; i++) {
     //     img[i].style.backgroundPositionY = offset * 0.7 +"px";
     // }
