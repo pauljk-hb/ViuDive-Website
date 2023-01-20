@@ -19,7 +19,7 @@
   --semiBold: "Alexandria-semiBold";
   --bold: "Alexandria-bold";
 
-  --title: 7rem;
+  --title: clamp(6em, 50%, 7rem);
   --subTitle: 3em;
   --imgTitle: 3.17em;
   --bigText: 1.6em;
