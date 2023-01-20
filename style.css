@@ -238,8 +238,22 @@ li > a::after {
   /* Footer  */
 
   footer{
-    min-height: 20em;
-    background-color: var(--deepBlue);
+    min-height: 7em;
+    background-color: var(--ligthWhiteBlue);
+
+  }
+
+.icons{
+    
+    color: var(--darkBlue);
+    font-size: 100%;
+    font-family: var(--semiBold);
+
+}
+
+.element {
+    position: relative;
+    left: 65em;
   }
 
 /* ---------- Home Site Settings ---------- */
