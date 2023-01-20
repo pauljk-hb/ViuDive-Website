@@ -133,6 +133,10 @@ button:hover .svg{
         gap: 0em 3em;
         grid-auto-flow: row;
     }
+
+    .friction-two-one{
+        grid-template-columns: 1fr 2fr!important;
+    }
       
 }
 
@@ -256,7 +260,7 @@ li > a::after {
   text-align: center;
   position: relative;
   overflow: hidden;
-  gap: 25vh;
+  gap: clamp(8vh, 50%, 25vh);
 }
 
 .hero svg{
