@@ -19,7 +19,7 @@
   --semiBold: "Alexandria-semiBold";
   --bold: "Alexandria-bold";
 
-  --title: clamp(6em, 50%, 7rem);
+  --title: clamp(6em, 6.5em, 7rem);
   --subTitle: 3em;
   --imgTitle: 3.17em;
   --bigText: 1.6em;
@@ -30,11 +30,11 @@
 
 @media (max-width: 930px) {
       :root{
-        --title: 5em;
+        --title: calc(4em + 6 * ((100vw - 7px) / 680));
         --subTitle: 2em;
         --imgTitle: 2.2em;
-        --bigText: 0.8em;
-        --smallText: 0.9em;
+        --bigText: 1.2em;
+        --smallText: 1em;
         --sectionTitle: 2em;
         --sectionSubTitle: 0.9em;
       }
@@ -347,7 +347,7 @@ li > a::after {
   text-align: center;
   position: relative;
   overflow: hidden;
-  gap: clamp(8vh, 50%, 25vh);
+  gap: clamp(5vh, 22vh, 25vh);
 }
 
 .hero svg{
@@ -418,6 +418,16 @@ li > a::after {
     justify-content: center;
 }
 
+@media (max-width: 930px) {
+    .imgSlideSmall{
+        min-height: 18rem!important;
+    }
+
+    .img-sec-text{
+        padding-top: 5em;
+    }
+}
+
 /* ---------- Buissnes Site Settings ---------- */
 
 .imgSlide{
@@ -464,22 +474,52 @@ li > a::after {
 
 /* ---------- Kampagne Site Settings ---------- */
 
-#ViuDiveMockUp{
-    max-width: 45em;
-    border-radius:7em 7em 0 0;
-    margin-left: 3em;
+@media (min-width: 930px) {
+    .download-flex{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 6em;
+        justify-content: flex-end;
+        margin-left: 10vw;
+    }
+
+    #ViuDiveMockUp{
+        width: 40vw;
+        border-radius:7em 7em 0 0;
+        aspect-ratio: auto
+    }
+    .download{
+        padding-top: 10em;
+        width: 100%;
+    }
 }
 
-.download{
-    padding-top: 10em;
+@media (max-width: 930px) {
+    .download-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #ViuDiveMockUp{
+        width: 90%;
+        height: 50vh;
+        border-radius:4em 4em 0 0;
+        aspect-ratio: auto;
+        object-fit: cover;
+    }
+
+    .download{
+        padding-top: 1em;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        margin-bottom: 2em;
+    }
 }
 
 .download div, .download h3{
     margin-bottom: 1em;
-}
-
-.download div{
-    margin-left: 3em;
 }
 
 #bk-hero-image{
