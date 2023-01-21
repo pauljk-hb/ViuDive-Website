@@ -1,6 +1,7 @@
 const nav = document.getElementsByClassName('nav')[0];
 const navbk = document.getElementsByTagName('nav')[0];
 const navItem = document.getElementsByClassName('nav-item');
+const hamColor = document.querySelectorAll('.hamburger div');
 
 window.addEventListener('scroll', () => {
     let offset = window.scrollY;
@@ -8,6 +9,10 @@ window.addEventListener('scroll', () => {
     if (offset > 700) {
         nav.style.height = '6rem';
         navbk.style.backgroundColor = 'white';
+        hamColor.forEach(hamColor =>{
+            hamColor.style.background = 'var(--darkBlue)';
+        })
+        
         for (let i = 0; i < navItem.length; i++) {
             navItem[i].style.color = 'var(--darkBlue)';
             navItem[i].style.fontFamily = 'var(--normal)';
@@ -16,6 +21,10 @@ window.addEventListener('scroll', () => {
     } else {
         nav.style.height = '5rem';
         navbk.style.backgroundColor = 'transparent';
+        hamColor.forEach(hamColor =>{
+            hamColor.style.background = 'white';
+        })
+
         for (let i = 0; i < navItem.length; i++) {
             navItem[i].style.color = 'white';
             navItem[i].style.fontFamily = 'var(--extraLight)';
@@ -41,3 +50,20 @@ window.addEventListener('scroll', () => {
         }
     
     })
+
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-item-list");
+const links = document.querySelectorAll(".nav-item");
+const linkEle = document.querySelectorAll(".nav-item-list ol");
+
+hamburger.addEventListener('click', ()=>{
+   //Animate Links
+    navLinks.classList.toggle("active");
+
+    links.forEach(link => {
+        link.classList.toggle("active");
+    });
+
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+});
