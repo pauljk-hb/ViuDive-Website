@@ -325,8 +325,54 @@ li > a::after {
   /* Footer  */
 
   footer{
-    min-height: 20em;
+    min-height: 5em;
     background-color: var(--deepBlue);
+    padding: 1em;
+  }
+
+  .mitte{
+    justify-content: center!important;
+    align-items: center!important;
+
+  }
+
+  @media screen and (min-width: 800px){
+    .footerLinks{
+        display: flex;
+        gap: 1em;
+        font-family: var(--extraLight);
+      }
+  }
+
+  
+
+  .footerLinks a{
+    color: var(--ligthWhiteBlue);
+    text-align: center;
+  }
+
+  .footerIcons{
+    fill: var(--ligthWhiteBlue);
+    height: 2.3em;
+
+  }
+
+  .footerParagraph{
+    font-family: var(--extraLight);
+    font-size: var(--smallText);
+    color: var(--ligthWhiteBlue);
+    
+  }
+
+  .flex-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
+  }
+
+  .flexcolum{
+    flex-direction: column;
   }
 
 /* ---------- Home Site Settings ---------- */
