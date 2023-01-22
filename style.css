@@ -330,6 +330,11 @@ li > a::after {
     padding: 1em;
   }
 
+  .footerKam{
+    margin: 2em;
+
+  }
+
   .mitte{
     justify-content: center!important;
     align-items: center!important;
@@ -628,6 +633,12 @@ li > a::after {
         padding-top: 10em;
         width: 100%;
     }
+}
+
+.play{
+
+    fill: var(--deepBlue);
+    height: 2.8em;
 }
 
 @media (max-width: 930px) {
