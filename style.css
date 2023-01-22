@@ -636,9 +636,19 @@ li > a::after {
 }
 
 .play{
-
     fill: var(--deepBlue);
     height: 2.8em;
+    position:absolute;
+}
+
+#pause{
+    display: none;
+
+}
+
+.playCon{
+    justify-items: center;
+
 }
 
 @media (max-width: 930px) {

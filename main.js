@@ -91,13 +91,7 @@ var input = '<strong>' + document.querySelector(this).parents('.dropdown').query
 document.querySelector('.msg').html(msg + input + '</span>');
 });  
 
-const play = document.getElementsById("play");
 
-function play(){
-    Audio = 
-    Audio.play
-    play.style.display= "none";
-}
 
 
 
